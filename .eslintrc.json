@@ -1,7 +1,11 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "commonjs": true
+    },
+    "globals": {
+        "process": true
     },
     "extends": [
         "eslint:recommended",
@@ -11,7 +15,7 @@
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 8,
+        "ecmaVersion": 2018,
         "sourceType": "module"
     },
     "plugins": [
@@ -38,7 +42,7 @@
         "jsx-a11y/anchor-is-valid": 0,
         "react/react-in-jsx-scope": 0,
         "react/no-array-index-key": 0,
-        "react/no-unused-prop-types": 1,
+        "react/no-unused-prop-types": 0,
         "react/require-default-props": 0,
         "react/no-unescaped-entities": 0,
         "import/prefer-default-export": 0,

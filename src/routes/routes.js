@@ -5,7 +5,11 @@ import Users from "pages/Users";
 
 export default function Router() {
   return useRoutes([
-    { path: "/", element: <Users /> },
+    {
+      path: "/",
+      element: <Users name={"dummy"} />,
+    },
+
     { path: "*", element: <Navigate to="/404" replace /> },
   ]);
 }

@@ -25,6 +25,7 @@ yarn install
 ## Code Conventions
 
 - Always make sure to keep your code in a consistent style. Use `Cntrl + Alt + F` (in windows) to format your code.
+- Always use PropTypes in your components. [Reference](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
 ## Env files
 
