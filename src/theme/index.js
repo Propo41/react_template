@@ -1,20 +1,20 @@
-import PropTypes from "prop-types";
-import { useMemo } from "react";
+import PropTypes from 'prop-types';
+import { useMemo } from 'react';
 // material
-import { CssBaseline } from "@mui/material";
-import {
-  ThemeProvider,
-  createTheme,
-  StyledEngineProvider,
-} from "@mui/material/styles";
+import { CssBaseline } from '@mui/material';
+import { ThemeProvider, createTheme, StyledEngineProvider } from '@mui/material/styles';
 //
-import shape from "./shape";
-import palette from "./palette";
-import typography from "./typography";
-import componentsOverride from "./overrides";
-import shadows, { customShadows } from "./shadows";
+import shape from './shape';
+import palette from './palette';
+import typography from './typography';
+import componentsOverride from './overrides';
+import shadows, { customShadows } from './shadows';
 
 // ----------------------------------------------------------------------
+/**
+ * StyledEngineProvider: used to inject the styles first, to overrride !important we use injectFirst;
+ * more: https://mui.com/material-ui/guides/interoperability/#css-injection-order
+ */
 
 export default function ThemeConfig({ children }) {
   const themeOptions = useMemo(
